@@ -3,7 +3,7 @@
 let g:promptline_preset = {
         \'a' : [ '\u@\h' ],
         \'b' : [ promptline#slices#cwd() ],
-        \'c' : [ promptline#slices#vcs_branch() ],
+        \'c' : [ promptline#slices#vcs_branch(), promptline#slices#git_status() ],
         \'z' : [ promptline#slices#last_exit_code(), promptline#slices#jobs() ],
         \'warn' : [ promptline#slices#last_exit_code(), promptline#slices#battery({ 'threshold': 15 }) ]}
 
